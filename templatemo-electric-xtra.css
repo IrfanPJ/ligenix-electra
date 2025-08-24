@@ -360,7 +360,11 @@ https://templatemo.com/tm-596-electric-xtra
             text-transform: uppercase;
             letter-spacing: 0.1em;
             text-shadow: 0 0 20px rgba(255, 94, 0, 0.5);
+            white-space: nowrap;
             overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 100vw;
+            line-height: 1.1;
         }
 
         .char {
@@ -425,6 +429,11 @@ https://templatemo.com/tm-596-electric-xtra
             text-transform: uppercase;
             letter-spacing: 0.1em;
             text-shadow: 0 0 20px rgba(255, 94, 0, 0.5);
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 100vw;
+            line-height: 1.1;
         }
 
         .glitch-text::before,
@@ -1612,7 +1621,13 @@ https://templatemo.com/tm-596-electric-xtra
             }
 
             .glitch-text {
-                font-size: clamp(1.2rem, 4.9vw, 2.4rem);
+                font-size: clamp(2.2rem, 8vw, 4rem);
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                max-width: 100vw;
+                line-height: 1.1;
+                letter-spacing: 0.03em;
             }
 
             .text-rotator {
