@@ -435,9 +435,10 @@ https://templatemo.com/tm-596-electric-xtra
         </div>
         <div class="contact-container">
             <div class="contact-form">
-                <form id="contactForm" name="contactform" method="POST" data-netlify="true">
-                    <input type="hidden" name="form-name" value="contactForm">
-                    
+                <form id="contactForm" name="contactForm" method="POST" netlify >
+                    <!-- Required hidden input for Netlify to detect form -->
+                    <input type="hidden" name="form-name" value="contactForm" />
+                  
                     <div class="form-group">
                       <label for="name">Name</label>
                       <input type="text" id="name" name="name" required>
@@ -453,9 +454,8 @@ https://templatemo.com/tm-596-electric-xtra
                       <textarea id="message" name="message" required></textarea>
                     </div>
                   
-                    <button type="submit">Send</button>
+                    <button type="submit" class="submit-btn">Send Message</button>
                   </form>
-                  
                   
             </div>
             <div class="contact-info">
