@@ -435,9 +435,13 @@ https://templatemo.com/tm-596-electric-xtra
         </div>
         <div class="contact-container">
             <div class="contact-form">
-                <form id="contactForm" name="contactForm" method="POST" netlify >
+                <form id="contactForm" name="contactForm" method="POST" data-netlify="true" netlify-honeypot="bot-field">
                     <!-- Required hidden input for Netlify to detect form -->
                     <input type="hidden" name="form-name" value="contactForm" />
+                    <!-- Netlify honeypot field -->
+                    <p style="display:none;">
+                      <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+                    </p>
                   
                     <div class="form-group">
                       <label for="name">Name</label>

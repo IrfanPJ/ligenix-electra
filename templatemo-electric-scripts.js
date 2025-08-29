@@ -113,14 +113,6 @@ https://templatemo.com/tm-596-electric-xtra
             });
         });
 
-        // Form submission
-        document.getElementById('contactForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            // Add your form submission logic here
-            alert('Message sent! We\'ll get back to you soon.');
-            this.reset();
-        });
-
         // Initialize particles
         createParticles();
 
